@@ -1,0 +1,104 @@
+
+@media only screen and (max-width: 768px) {
+    .ul {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .ul li {
+        margin: 10px 0;
+    }
+  .navbar1{
+    display: none;
+  }
+    .center h1 {
+        font-size: 2em;
+    }
+  
+    .center p {
+        font-size: 1em;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .row3 {
+        display: block;
+    
+    }
+  .ico{
+    display: block;
+  }
+  .img img{
+    width: 200px;
+  }
+    .row3 .ico i {
+      font-size: 2em;
+    }
+  .row4{
+    flex-direction: column;
+    height: auto;
+    display: block;
+   background-color: #fff;
+  }
+  .left{
+ width: 230px;
+height: 200px;
+text-align: center;
+  }
+  .inside{
+    width: 230px;
+    height: 200px;
+    text-align: center;
+  }
+  .right{
+    width: 230px;
+    height: 200px;
+    text-align: center;
+    background-color: #555;
+  }
+  .contan{
+    position: relative;
+    left: 20px;
+    width: 100%;
+   }
+   .contan h2{
+    font-size: 15px;
+   }
+   .contan i{
+    font-size: 20px;
+   }
+   .contan p{
+    font-size: 12px;
+   }
+    .i2 {
+      position: relative;
+      left: 0;
+    }
+    .tani{
+      display: block;
+    }
+    .awal{
+      display: block;
+    }
+    .input-group {
+position: relative;
+left: 0px;
+margin: 10px;
+    }
+    .cont5{
+      height: fit-content;
+   
+    }
+    .row7{
+      height: 400px;
+      display: block;
+
+    }
+    .bg-text{
+      font-size: 20px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .button_show{
+      display: none;
+    }
+  }
