@@ -1,298 +1,164 @@
+To make the given HTML code responsive using Bootstrap, you should utilize Bootstrap's grid system, responsive utilities, and classes for different screen sizes. Here are some adjustments and improvements to ensure your layout adapts to various screen sizes:
+
+1. **Use Bootstrap classes for grids and layout adjustments**: Bootstrap's grid system allows for responsive design by using a series of containers, rows, and columns to layout and align content. Columns will re-arrange themselves automatically based on the screen size.
+
+2. **Ensure proper use of Bootstrap breakpoints**: These are predefined classes like `.col-md-6` or `.col-lg-4` that apply styles at specific breakpoints (medium, large, etc.).
+
+3. **Avoid fixed widths and heights**: Let elements resize based on their container or the screen size.
+
+Here's the updated HTML code with Bootstrap's responsive design features incorporated:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GYMNAST
-    </title>
+    <title>GYMNAST</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="responsev.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css.map">
 </head>
 <body>
-   
-<div class="container cont1">
-<!-- <button class="show btn1"></button> -->
-<button class="menu__icon button_show">
-    <span></span>
-
-    <span></span>
-  </button>
-<div class="row">
-<div class="col nav">
-<nav class="navbar1 col">
-    <h1 class="logo">GYMNAST</h1>
-<ul class="col ul navbar"> 
-    <br>
-    <li class="nav-item"><a href=""> Home</a></li>
-    <li class="nav-item"> <a href="">About Us</a></li>
-    <li class="nav-item"><a href="">Our Features</a></li>
-    <li class="nav-item"><a href="">Classes</a></li>
-    <li class="nav-item"><a href="">Contact</a></li>
-</ul>
-</nav>
-</div>
-</div>
-</div>
-<div class="col center">
-    <p>Gym & Fitness Center</p>
-    <h1>Best Gym In Iraq</h1>
-    <button class="btn btn1"> Join Now</button>
-</div>
-<div class="container cont2">
-    <div class="row row2">
-        <div class="col one">
-   <div class="contant">
-    <h1>Body Building</h1>
-    <br>
-    <p>Lorem justo tempor sit aliquyam invidunt, amet vero ea dolor ipsum ut diam sit dolores, dolor sit eos sea sanctus erat lorem nonumy sanctus takimata. Kasd amet sit sadipscing at</p>
-
-   <button class="btn2">Join Now</button>
-   </div>
+<div class="container">
+    <button class="menu__icon button_show">
+        <span></span>
+        <span></span>
+    </button>
+    <div class="row">
+        <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <h1 class="logo">GYMNAST</h1>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Our Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Classes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <div class="col two">
-            <div class="contant">
-                <h1>Muscle Building</h1>
-                <br>
+    </div>
+    <div class="row text-center my-5">
+        <div class="col">
+            <p>Gym & Fitness Center</p>
+            <h1>Best Gym In Iraq</h1>
+            <button class="btn btn-primary">Join Now</button>
+        </div>
+    </div>
+    <div class="row my-5">
+        <div class="col-md-6 mb-4">
+            <div class="content text-center">
+                <h1>Body Building</h1>
                 <p>Lorem justo tempor sit aliquyam invidunt, amet vero ea dolor ipsum ut diam sit dolores, dolor sit eos sea sanctus erat lorem nonumy sanctus takimata. Kasd amet sit sadipscing at</p>
-            
-               <button class="btn3">Join Now</button>
-               </div>
+                <button class="btn btn-secondary">Join Now</button>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="content text-center">
+                <h1>Muscle Building</h1>
+                <p>Lorem justo tempor sit aliquyam invidunt, amet vero ea dolor ipsum ut diam sit dolores, dolor sit eos sea sanctus erat lorem nonumy sanctus takimata. Kasd amet sit sadipscing at</p>
+                <button class="btn btn-secondary">Join Now</button>
+            </div>
         </div>
     </div>
-    </div>
-</div>
-<div class="container cont3">
-    <div class="row row3">
-        <div class="col img">
-            <img src="img/about.jpg" alt="">
+    <div class="row my-5">
+        <div class="col-md-6 mb-4">
+            <img src="img/about.jpg" class="img-fluid" alt="">
         </div>
-
-
-        <div class="col icons">
-
+        <div class="col-md-6 mb-4">
             <h1>10 Years Experience</h1>
-            <br>
             <p>Labore vero lorem eos sed aliquy ipsum aliquy sed. Vero dolore dolore takima ipsum lorem rebum</p>
-            <br>
-            <div class="ico">
-                <div class="i1"><i class="fa-solid fa-medal"></i>
-                <br>
-                <br>
-                <h2>Award Winning</h2>
-                <br>
-                <p>Ipsum sanctu dolor ipsum dolore sit et kasd duo</p>
-                <br>
-                <button class="btn5">Learn More</button>
-                </div>
-                <div class="i2"><i class="fa-solid fa-dumbbell"></i>
-                    <br>
-                    <br>
-                    <h2>Certified GYM Center</h2>
-                    <br>
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <i class="fa-solid fa-medal"></i>
+                    <h2>Award Winning</h2>
                     <p>Ipsum sanctu dolor ipsum dolore sit et kasd duo</p>
-                    <br>
-                   
+                    <button class="btn btn-secondary">Learn More</button>
+                </div>
+                <div class="col-md-6 text-center">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <h2>Certified GYM Center</h2>
+                    <p>Ipsum sanctu dolor ipsum dolore sit et kasd duo</p>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="row4">
-    <div class="left">
-     <div class="contan">
-        <h2>Progression</h2>
-        <br>
-        <i class="fa-regular fa-calendar-days"></i>
-        <br>
-        <br>
-        <p>Lorem ipsum dolor sit amet,<br>  adipiscing elit. Sed eu suscipit</p>
-     </div>
-    </div>
-    <div class="inside">
-        <div class="contan">
+    <div class="row text-center my-5">
+        <div class="col-md-4 mb-4">
             <h2>Progression</h2>
-            <br>
+            <i class="fa-regular fa-calendar-days"></i>
+            <p>Lorem ipsum dolor sit amet, adipiscing elit. Sed eu suscipit</p>
+        </div>
+        <div class="col-md-4 mb-4">
+            <h2>Progression</h2>
             <i class="fa-solid fa-dumbbell"></i>
-            <br>
-            <br>
-            <p>Lorem ipsum dolor sit<br> amet, consectetur<br> adipiscing elitsuscipit orci </p>
-         </div>
-    </div>
-    <div class="right">
-        <div class="contan">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitsuscipit orci </p>
+        </div>
+        <div class="col-md-4 mb-4">
             <h2>Progression</h2>
-            <br>
             <i class="fa-solid fa-bicycle"></i>
-            <br>
-            <br>
-            <p>Lorem ipsum dolor sit<br> amet, consectetur  Sed eu suscip <br>velit id liber</p>
-         </div>
-    </div>
-</div>
-<div class="container cont4">
-    <div class="htag">
-        <h4>Why Choose Us?</h4>
-        <br>
-  
-        <h1>Benifits of Joining Our GYM</h1>
-    </div>
-    <div class="row row5">
-
-        <div class="col awal">
-          <div>
-            <img src="img/feature-1.jpg" alt="">
-          </div>
-<div>
-   <h2>Videos Instruction</h2>
-   <br>
-   <i class="fa-solid fa-dumbbell" style="color: #fd1717;"></i>
-   <br>
-   <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Quisquam, iste.</p>
-</div>
+            <p>Lorem ipsum dolor sit amet, consectetur Sed eu suscipit velit id liber</p>
         </div>
-        <div class="col tani">
-            <div>
-                <img src="img/feature-3.jpg" alt="">
-              </div>
-    <div>
-       <h2>Free Apps & WiFi</h2>
-       <br>
-       <i class="fa-solid fa-wifi" style="color: #fb0e0e;"></i>
-       <br>
-       <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Aliquam, ad!</p>
     </div>
-     </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="row row6">
-
-        <div class="col awal">
-          <div>
-            <img src="img/feature-2.jpg" alt="">
-          </div>
-<div>
-   <h2>Community Support</h2>
-   <br>
-   <i class="fa-regular fa-handshake" style="color: #d92020;"></i>
-   <br>
-   <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Impedit, rem!</p>
-</div>
+    <div class="row text-center my-5">
+        <div class="col-12">
+            <h4>Why Choose Us?</h4>
+            <h1>Benefits of Joining Our GYM</h1>
         </div>
-        <div class="col tani">
-            <div>
-                <img src="img/feature-4.jpg" alt="">
-              </div>
-    <div>
-       <h2>Training Calendar</h2>
-       <br>
-       <i class="fa-solid fa-medal" style="color: #ff1414;"></i>
-       <br>
-       <p>Lorem, ipsum dolor sit amet consectetur<br> adipisicing elit. Repellendus, excepturi.</p>
-    </div>
-     </div>
-    </div>
-</div>
-<div class="container cont5">
-<div class="row row7">
-    <div class="col bg">
-        <h1 class="bg-text">Subscribe Our Newsletter </h1>
-        <p class="text-white h5">Subscribe and get Our latest article in your inbox</p>
-
-        <div class="input-group">
-            <input type="email" class="input" id="Email" name="Email" placeholder="youre Email:" autocomplete="off">
-            <input class="button--submit" value="Subscribe" type="submit">
+        <div class="col-md-6 mb-4">
+            <img src="img/feature-1.jpg" class="img-fluid" alt="">
+            <h2>Videos Instruction</h2>
+            <i class="fa-solid fa-dumbbell" style="color: #fd1717;"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, iste.</p>
         </div>
-
+        <div class="col-md-6 mb-4">
+            <img src="img/feature-3.jpg" class="img-fluid" alt="">
+            <h2>Free Apps & WiFi</h2>
+            <i class="fa-solid fa-wifi" style="color: #fb0e0e;"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ad!</p>
+        </div>
+        <div class="col-md-6 mb-4">
+            <img src="img/feature-2.jpg" class="img-fluid" alt="">
+            <h2>Community Support</h2>
+            <i class="fa-regular fa-handshake" style="color: #d92020;"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, rem!</p>
+        </div>
+        <div class="col-md-6 mb-4">
+            <img src="img/feature-4.jpg" class="img-fluid" alt="">
+            <h2>Training Calendar</h2>
+            <i class="fa-solid fa-medal" style="color: #ff1414;"></i>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, excepturi.</p>
+        </div>
     </div>
-</div>
-</div>
-<div class="container cont6">
-    <div class="row row8">
-       <div class="col">
-     
-       </div>
-    </div>
-</div>
-    <div class="container cont6">
-    <div class="row row8">
-
-       <div class="col text">
-     <h3 class="text-danger">Our Trainers</h3>
-     <h1 class="meet">Meet Our Expert Trainers</h1>
-       </div>
-       <div class="cards">
-        <div class="one1 col col-img">
-            <img class="img-hover" src="img/team-1.jpg" alt="">
-            <div class="icon">
-
-                <i class="fa-brands fa-instagram" style="color: #ff2929;"></i>
-                <i class="fa-brands fa-tiktok"></i>
-                <i class="fa-brands fa-facebook" style="color: #2573f8;"></i>
-            </div>
-            <div class="trainer">
-                <h3>Trainer Name</h3>
-                <br>
-                <span>Trainer</span>
+    <div class="row text-center my-5">
+        <div class="col bg-primary text-white py-5">
+            <h1 class="bg-text">Subscribe Our Newsletter </h1>
+            <p>Subscribe and get Our latest article in your inbox</p>
+            <div class="input-group">
+                <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-danger" type="button" id="button-addon2">Subscribe</button>
+                </div>
             </div>
         </div>
-        <div class="two2 col col-img">
-            <img class="img-hover" src="img/team-4.jpg" alt="">
-            <div class="icon">  <i class="fa-brands fa-instagram" style="color: #ff2929;"></i>
-                <i class="fa-brands fa-tiktok"></i>
-                <i class="fa-brands fa-facebook" style="color: #2573f8;"></i>
-             </div>
-            <div class="trainer">
-                <h3>Trainer Name</h3>
-                <br>
-                <span>Trainer</span>
-            </div>
-        </div>
-        <div class="three col col-img">
-            <img class="img-hover" src="img/team-2.jpg" alt="">
-            <div class="icon">  <i class="fa-brands fa-instagram" style="color: #ff2929;"></i>
-                <i class="fa-brands fa-tiktok"></i>
-                <i class="fa-brands fa-facebook" style="color: #2573f8;"></i>
-             </div>
-            <div class="trainer">
-                
-                <h3>Trainer Name</h3>
-                <br>
-                <span>Trainer</span>
-            </div>
-        </div>
-        <div class="four col col-img">
-            <img class="img-hover" src="img/team-3.jpg" alt="">
-            <div class="icon">  <i class="fa-brands fa-instagram" style="color: #ff2929;"></i>
-                <i class="fa-brands fa-tiktok"></i>
-                <i class="fa-brands fa-facebook" style="color: #2573f8;"></i>
-             </div>
-            <div class="trainer">
-                <h3>Trainer Name</h3>
-                <br>
-                <span>Trainer</span>
-            </div>
-        </div>
-       </div>
     </div>
-</div>
-</body>
-<script src="jquery.main.js"></script>
-<script>
-    $(document).ready(function(){
-        $('.button_show').click(function(e){
-            e.preventDefault()
-            $('.navbar1').slideToggle(100)
-        })
-    })
-</script>
-</html>
+    <div class="row text-center my-5">
+        <div class="col-12">
+            <h3 class="text-danger">Our Trainers</h3>
+            <h1 class="meet">Meet Our Expert Trainers</h1>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="img/team-1.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h3>Trainer Name</h3>
+                    <span>Trainer</span>
+                    <div class="social
